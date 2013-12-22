@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Colos.io</title>
+	<title>Colos</title>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
-	<script type="text/javascript" src="//use.typekit.net/gsb4wqu.js"></script>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<link rel="shortcut icon" href="icon.png">
+	<link rel="apple-touch-icon-precomposed" href="icon.png">
+
+
+	<script type="text/javascript" src="http://use.typekit.net/gsb4wqu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<style>
 		html, body, margin, form, a, h1, h2, h3, h4, h5, h6, select, input, tr, td, table, ul, ol, li, textarea, p, button {
 			margin: 0;
@@ -13,7 +22,7 @@
 		body {
 			background: #1a1a1a;
 			font-size: 10px;
-			font-family: 'Museo Sans', 'Helvetica Neue', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+			font-family: 'Museo Sans', 'museo-sans', 'Helvetica Neue', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 		}
 		a, a:link, a:hover, a:active, a:visited {
 			color: #f64851;
@@ -42,9 +51,9 @@
 			-webkit-animation-name: masked-animation;
 			-webkit-animation-duration: 320s;
 			-webkit-animation-iteration-count: infinite;
-			-webkit-animation-timing-function: linear;
-			
+			-webkit-animation-timing-function: linear;	
 		}
+
 		@-webkit-keyframes masked-animation {
 			0% {background-position: -2000% bottom;}
 			100% {background-position: left bottom;}
