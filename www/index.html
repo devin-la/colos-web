@@ -11,9 +11,12 @@
 			padding: 0;
 		}
 		body {
-			background: #000;
+			background: #1a1a1a;
 			font-size: 10px;
 			font-family: 'Museo Sans', 'Helvetica Neue', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+		}
+		a, a:link, a:hover, a:active, a:visited {
+			color: #f64851;
 		}
 		.container{
 			text-align: center;
@@ -27,31 +30,40 @@
 		}
 		p {
 			font-size: 1.4em;
+			color: #fff;
+			opacity: .7;
 		}
 		.masked {
-			background: url(grad.png) repeat;
+			background: -webkit-linear-gradient(left, #24ceaf 0%,#fe9723 25%,#f5107c 50%,#9717cb 75%,#24ceaf 100%);
+			background-size: 400px;
+
 			-webkit-text-fill-color: transparent;
 			-webkit-background-clip: text;
 			-webkit-animation-name: masked-animation;
-			-webkit-animation-duration: 20s;
+			-webkit-animation-duration: 320s;
 			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			
 		}
 		@-webkit-keyframes masked-animation {
-			0% {background-position: -5% bottom;}
-			5% {background-position: left bottom;}
-			95% {background-position: right bottom;}
-			100% {background-position: 105% bottom;}
+			0% {background-position: -2000% bottom;}
+			100% {background-position: left bottom;}
 		}
 	</style>
 </head>
 <body>
 
 <div class="container">
-	<div class= "masked">
-		<h1>colos.io</h1>
+		<div class= "masked">
+			<h1>colos.io</h1>
+		</div>
 		<br><br>
 		<p>For support, contact me at <a href="mailto:help@colos.io">help@colos.io</a></p>
-	</div>
+		<br><br><br><br>
+		<a href="https://itunes.apple.com/us/app/colos/id784060887">
+			<img src="app-store.svg" style="width: 15em;">
+		</a>
+
 </div>
 
 </body>
