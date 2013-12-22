@@ -30,20 +30,31 @@
 		.container{
 			text-align: center;
 		}
+		.pad {
+			margin-top: 9.1em;
+		}
 		h1 {
 			font-size: 7em;
 			line-height: 1;
 			letter-spacing: -.05em;
 			font-weight: 100;
-			margin-top: 1.3em;
 			color: #fff;
+		}
+		#logo {
+			background: url(logo.svg) no-repeat;
+			background-position: bottom;
+			background-size: contain;
+			height: 7em;
+			width: 21.5em;
+			margin: 0 auto;
+			display: none;
 		}
 		p {
 			font-size: 1.4em;
 			color: #fff;
 			opacity: .7;
 		}
-		.masked {
+		#masked {
 			background: -webkit-linear-gradient(left, #24ceaf 0%,#fe9723 25%,#f5107c 50%,#9717cb 75%,#24ceaf 100%);
 			background-size: 400px;
 
@@ -64,17 +75,26 @@
 <body>
 
 <div class="container">
-		<div class= "masked">
-			<h1>colos.io</h1>
-		</div>
-		<br><br>
-		<p>For support, contact me at <a href="mailto:help@colos.io">help@colos.io</a></p>
-		<br><br><br><br>
-		<a href="https://itunes.apple.com/us/app/colos/id784060887">
-			<img src="app-store.svg" style="width: 15em;">
-		</a>
+	<div class="pad"></div>
+	<div id="masked">
+		<h1>colos.io</h1>
+	</div>
+	<div id="logo"></div>
+	<br><br>
+	<p>For support, contact me at <a href="mailto:help@colos.io">help@colos.io</a></p>
+	<br><br><br><br>
+	<a href="https://itunes.apple.com/us/app/colos/id784060887">
+		<img src="app-store.svg" style="width: 15em;">
+	</a>
 
 </div>
+
+<script>
+	if (!/webkit/i.test(navigator.userAgent.toLowerCase())) {
+		document.getElementById('logo').style.display = 'block';
+		document.getElementById('masked').style.display = 'none';
+	}
+</script>
 
 </body>
 </html>
